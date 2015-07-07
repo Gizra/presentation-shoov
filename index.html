@@ -191,6 +191,40 @@ it('should show the DuckDuckGo main search page',function(done) {
         </div>
       </section>
 
+			<section>
+				<h2>Solution II - Live Monitoring, Selenium</h2>
+				<video class="gfyVidIframe" id="gfyVid" autoplay="" loop="" poster="//thumbs.gfycat.com/ThirstyOfficialDikkops-poster.jpg" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" width="785">
+					<source id="webmsource" src="//zippy.gfycat.com/ThirstyOfficialDikkops.webm" type="video/webm">
+					<source id="mp4source" src="//zippy.gfycat.com/ThirstyOfficialDikkops.mp4" type="video/mp4">
+					<img src="//giant.gfycat.com/ThirstyOfficialDikkops.gif">
+				</video>
+			</section>
+
+			<section>
+				<pre><code data-trim>
+# .shoov.yml
+addons:
+  - selenium
+
+env:
+  # GitHub username
+  - secure: "8a0e4139d27a8f1cec757c485eaa3ca5a038074ced07af46a90959db331a2dd8a7c8"
+
+  # GitHub password
+  - secure: "8a0e4139d27a8f1cec757c485eaf2eb3a1210953ec078f41ab037d93261332d58ed51849fce6258a"
+
+before_script:
+  - cd behat
+  # Instead of composer install, we save time by getting
+  # a gzipped file with the vendor and bin directories.
+  - tar zxf behat-vendor.tar.gz
+  - cp behat.local.yml.shoov behat.local.yml
+
+script:
+  - ./bin/behat --tags=~wip
+				</code></pre>
+      </section>
+
 			</div>
 
 		</div>
