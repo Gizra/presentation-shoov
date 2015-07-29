@@ -53,8 +53,8 @@
       </section>
 
 			<section>
-				<h2>Shoov - Gizra's Testing Toolkit</h2>
-				<small>The Gizra Way</small>
+				<h2>How do you know your site is working?</h2>
+				<small>You don't. Unless you monitor it</small>
 
       </section>
 
@@ -94,7 +94,7 @@
 
 			<section>
         <div>
-          <h2>Solution I - Visual Regression</h2>
+          <h2>Solution I - Visual Monitoring</h2>
 					<ul>
 						<li>Automatic process constantly takes screenshots in various browsers and devices</li>
 						<li>Compares to expected page format (baseline image)</li>
@@ -105,30 +105,28 @@
 
 			<section>
         <div>
-          <h2>Solution I - Visual Regression</h2>
+          <h2>Solution I - Visual Monitoring</h2>
 					<div>
-						<iframe src="http://gfycat.com/ifr/FrailVioletEmperorpenguin" frameborder="0" scrolling="no" width="1168" height="840" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
+						<iframe src="http://gfycat.com/ifr/CrispShadyGreatwhiteshark" frameborder="0" scrolling="no" width="588" height="596" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
 					</div>
         </div>
       </section>
 
 			<section>
         <div>
-          <h2>Solution I - Visual Regression</h2>
+          <h2>Visual Monitoring (Mobile Emulation)</h2>
 					<div>
-						<img src="http://www.gizra.com/assets/images/posts/shoov-twitter/image1.jpg" />
+						<iframe src="http://gfycat.com/ifr/DefiantIcyAlleycat" frameborder="0" scrolling="no" width="586" height="618" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" ></iframe>
 					</div>
         </div>
       </section>
 
 			<section>
 				<pre><code data-trim>
-it('should show the DuckDuckGo main search page',function(done) {
+it('should show the home page',function(done) {
   client
-    .url('https://duckduckgo.com/')
-    .webdrivercss(testName, {
-      name: 'duckduck'
-    }, shoovWebdrivercss.processResults)
+    .url(baseUrl)
+    .webdrivercss(testName, {name: '1'}, shoovWebdrivercss.processResults)
     .call(done);
 });
 				</code></pre>
@@ -136,7 +134,7 @@ it('should show the DuckDuckGo main search page',function(done) {
 
 			<section>
         <div>
-          <h2>Solution I - Visual Regression</h2>
+          <h2>Visual Monitoring (Cross Browsers)</h2>
 					<div>
 					  <img src="http://www.gizra.com/assets/images/posts/shoov-travis/image2.jpg" />
 					</div>
@@ -157,7 +155,7 @@ it('should show the DuckDuckGo main search page',function(done) {
 
 			<section>
         <div>
-          <h2>Solution II - Live Monitoring</h2>
+          <h2>Live Monitoring (One Click Setup)</h2>
 					<div>
 					  <img src="https://cloud.githubusercontent.com/assets/125707/8808821/89750bb0-2fed-11e5-951e-31e1645f49bc.jpg"
 					</div>
@@ -166,28 +164,19 @@ it('should show the DuckDuckGo main search page',function(done) {
 
 			<section>
         <div>
-          <h2>Solution II - Live Monitoring</h2>
+          <h2>Live Monitoring (Real Time Logs)</h2>
 					<div>
-					  <img src="https://cloud.githubusercontent.com/assets/125707/8808933/2d5f6392-2fee-11e5-8c9d-eb3c459a8932.jpg"
+					  <img src="https://cloud.githubusercontent.com/assets/125707/8951238/44e7777a-35d4-11e5-9c83-662cdf189396.jpg"
 					</div>
         </div>
       </section>
 
 			<section>
-        <div>
-          <h2>Solution II - Live Monitoring</h2>
-					<div>
-					  <img src="./images/behat1.jpg"
-					</div>
-        </div>
-      </section>
-
-			<section>
-				<h2>Solution II - Live Monitoring, Selenium</h2>
-				<video class="gfyVidIframe" id="gfyVid" autoplay="" loop="" poster="//thumbs.gfycat.com/ThirstyOfficialDikkops-poster.jpg" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" width="785">
-					<source id="webmsource" src="//zippy.gfycat.com/ThirstyOfficialDikkops.webm" type="video/webm">
-					<source id="mp4source" src="//zippy.gfycat.com/ThirstyOfficialDikkops.mp4" type="video/mp4">
-					<img src="//giant.gfycat.com/ThirstyOfficialDikkops.gif">
+				<h2>Live Monitoring (Functional Testing)</h2>
+				<video class="gfyVidIframe" id="gfyVid" autoplay="" loop="" poster="//thumbs.gfycat.com/QuickAlienatedBinturong-poster.jpg" style="-webkit-backface-visibility: hidden;-webkit-transform: scale(1);" width="785">
+					<source id="webmsource" src="//zippy.gfycat.com/QuickAlienatedBinturong.webm" type="video/webm">
+					<source id="mp4source" src="//zippy.gfycat.com/QuickAlienatedBinturong.mp4" type="video/mp4">
+					<img src="//giant.gfycat.com/QuickAlienatedBinturong.gif">
 				</video>
 			</section>
 
